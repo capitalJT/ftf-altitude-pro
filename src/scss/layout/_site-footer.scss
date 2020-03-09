@@ -1,0 +1,15 @@
+.site-footer{
+  background-color: $black;
+  text-align: left;
+  font-family: $font-body;
+  p{
+    text-transform: none;
+    color:#999;
+  }
+  @include max-800{
+    .wrap{
+      padding-left:0;
+      padding-right:0;
+    }
+  }
+}

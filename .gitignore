@@ -1,0 +1,13 @@
+# Ignore Sass cache #
+###########
+**/.sass-cache
+**/.sass-cache/*
+
+scss/.sass-cache/
+scss/.sass-cache/*
+
+*.DS_Store
+.DS_Store
+
+node_modules/
+node_modules/*
