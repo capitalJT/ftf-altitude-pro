@@ -80,10 +80,19 @@ function jt_reviews_widget() {
 						echo '<p class="text-center">I can help you with UX design, WordPress development, web&nbsp;production, and <b>everything in between</b>.</p>';
 							if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
 								// code for localhost here
-								echo do_shortcode("[contact-form-7 id=\"648\" title=\"Contact form 1\"]");
+								// echo do_shortcode("[contact-form-7 id=\"648\" title=\"Contact form 1\"]");
+
+								?>
+								<div class="_form_1"></div><script src="https://jabaltorres.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8"></script>
+
+								<?php
 
 							} else {
-								echo do_shortcode("[contact-form-7 id=\"899\" title=\"Contact Form\"]");
+//								echo do_shortcode("[contact-form-7 id=\"899\" title=\"Contact Form\"]");
+								?>
+								<div class="_form_1"></div><script src="https://jabaltorres.activehosted.com/f/embed.php?id=1" type="text/javascript" charset="utf-8"></script>
+
+								<?php
 							}
 					echo '</div>';
 				echo '</div>';

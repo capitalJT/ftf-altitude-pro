@@ -47,7 +47,7 @@ add_shortcode('featured_project_CTAshortcode', 'featured_project_CTA_shortcode')
 
 /*
  * Download CTA
- * shortcode: [cta-download cta_title="" cta_subtitle="" cta_content="" cta_link=""]
+ * shortcode: [cta-download cta_title="" cta_subtitle="" cta_content="" cta_link="" cta_button_text=""]
  */
 function cta_download($atts){
 
@@ -57,18 +57,19 @@ function cta_download($atts){
 				'cta_title' => '',
 				'cta_subtitle' => '',
 				'cta_content' => '',
-				'cta_link' => ''
+				'cta_link' => '',
+				'cta_button_text' => ''
 			), $atts
 		)
 	);
 
 	$cta_download_html = "<div class='cta cta-download'>";
 	$cta_download_html .= "<div class='cta-download-inner'>";
-	$cta_download_html .= "<div class='col-1'>";
+	$cta_download_html .= "<div class='ftf-col-1'>";
 	if($cta_title !== '') {
 		$cta_download_html .= "<h3 class='cta-title text-white'>$cta_title</h3>";
 	} else {
-		$cta_download_html .= "<h3 class='cta-title text-white'>Download Cribl. It's free to get started.</h3>";
+		$cta_download_html .= "<h3 class='cta-title text-white'>Download Cribl LogStream. It's free to get started.</h3>";
 	}
 
 	if($cta_subtitle !== '') {
@@ -81,11 +82,22 @@ function cta_download($atts){
 		$cta_download_html .= "<p class='cta-paragraph text-white'>It's free to process <100 GB per day. Once you see the value and want to process more, let's talk. The free plan is single node and community supported.</p>";
 	}
 	$cta_download_html .= "</div>";
-	$cta_download_html .= "<div class='col-2'>";
-	if($cta_link !== '') {
-		$cta_download_html .= "<a class='cta-button' href='$cta_link'>Download</a>";
+
+
+
+	if($cta_button_text !== '') {
+		$cta_text_button = $cta_button_text;
 	} else {
-		$cta_download_html .= "<a class='button cta-button-1 has-shadow' href='/download/'>Download</a>";
+		$cta_text_button = "Download";
+	}
+
+
+
+	$cta_download_html .= "<div class='ftf-col-2'>";
+	if($cta_link !== '') {
+		$cta_download_html .= "<a class='button cta-button-1 has-shadow' href='$cta_link'>$cta_text_button</a>";
+	} else {
+		$cta_download_html .= "<a class='button cta-button-1 has-shadow' href='/download/'>$cta_text_button</a>";
 	}
 	$cta_download_html .= "</div>";
 	$cta_download_html .= "</div>";

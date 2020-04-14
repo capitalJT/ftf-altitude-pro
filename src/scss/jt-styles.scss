@@ -102,6 +102,7 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 
 
 @import "components/inputs";
+@import "components/ctas";
 
 // @import "partials/footer-widgets";
 @import "layout/navigation";
@@ -117,6 +118,7 @@ $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
 @import "partials/featured-projects";
 
 @import "templates/work-template";
+@import "templates/template-gated-page";
 
 @import "pages/home-page";
 @import "pages/case-studies";

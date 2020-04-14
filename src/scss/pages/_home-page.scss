@@ -257,7 +257,6 @@
   .img-container{
     height: 100px;
     display: flex;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -266,5 +265,11 @@
 .home{
   .site-container{
     @include animation('fadein 2s');
+  }
+}
+
+._form_1{
+  form{
+    width: 100% !important;
   }
 }
