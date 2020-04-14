@@ -6,6 +6,9 @@
     text-transform: none;
     color:#999;
   }
+  .genesis-nav-menu{
+    margin-top: 0;
+  }
   @include max-800{
     .wrap{
       padding-left:0;
