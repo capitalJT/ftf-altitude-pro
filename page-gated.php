@@ -288,6 +288,6 @@ Template Name: Gated Template
     <div style="clear: both;"></div>
 </div><!-- .content-area -->
 
-<?php  include_once get_stylesheet_directory() . '/jt_templates/blog/ftf-sandbox-cta.php'; ?>
+<?php  include_once get_stylesheet_directory() . '/jt_templates/blog/ftf-cta.php'; ?>
 
 <?php get_footer(); ?>

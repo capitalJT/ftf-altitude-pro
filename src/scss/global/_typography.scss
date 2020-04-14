@@ -182,7 +182,7 @@ blockquote{
   text-decoration: none;
   border-bottom: solid 1px map-get($theme-colors, primary);
   padding-bottom: 2px;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   &:hover{
     color: map-get($theme-colors, primary);
     transition: $global-ease;
@@ -215,13 +215,3 @@ blockquote{
 .widget-full .widget-title {
   margin-bottom: 40px;
 }
-
-
-
-
-
-
-
-
-
-

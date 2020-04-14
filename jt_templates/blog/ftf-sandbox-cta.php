@@ -1,1 +1,0 @@
-<?php echo do_shortcode("[cta-download cta_title=\"CTA Title\" cta_subtitle=\"CTA Subtitles\" cta_content=\"Learn about the features of XYZ in our interactive ABC!\" cta_link=\"//fivetwofive.com/\" cta_button_text=\"Download Now\"]"); ?>

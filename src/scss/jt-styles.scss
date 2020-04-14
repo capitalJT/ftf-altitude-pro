@@ -87,10 +87,11 @@ $light-grey: #A1A0A1;
 $dark-grey: #666666;
 $border-radius: 4px;
 
-
 $global-speed: 0.3s;
 $global-ease: all 0.3s ease-in-out;
 $global-box-shadow: 0 8px 8px -6px rgba(0,0,1,0.45);
+
+$font-weight-bold: bold;
 
 @import "global/base";
 
@@ -187,8 +188,6 @@ div#respond.comment-respond{
   }
 }
 
-
-
 .sd-social-icon .sd-content ul li[class*=share-] a.sd-button{
   padding: 7px;
 }
@@ -267,6 +266,7 @@ img:focus {
 }
 
 .prev-next-navigation{}
+
 .single-project-thumbnail img {
   width: 100%;
   height: auto;
