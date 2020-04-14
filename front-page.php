@@ -80,10 +80,10 @@ function jt_reviews_widget() {
 						echo '<p class="text-center">I can help you with UX design, WordPress development, web&nbsp;production, and <b>everything in between</b>.</p>';
 							if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
 								// code for localhost here
-								echo do_shortcode("[wpforms id=\"302\" title=\"false\" description=\"false\"]");
+								echo do_shortcode("[contact-form-7 id=\"648\" title=\"Contact form 1\"]");
 
 							} else {
-								echo do_shortcode("[wpforms id=\"302\" title=\"false\" description=\"false\"]");
+								echo do_shortcode("[contact-form-7 id=\"899\" title=\"Contact Form\"]");
 							}
 					echo '</div>';
 				echo '</div>';

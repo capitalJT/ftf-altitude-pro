@@ -121,7 +121,7 @@ add_action( 'genesis_before_footer', 'jtCustomFooter' );
 //* Change the footer text
 add_filter('genesis_pre_get_option_footer_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright] &middot; Jabal Torres &middot; Made in \'Merica';
+	$creds = '[footer_copyright] &middot; FiveTwoFive &middot; Powered by Fries';
 	return $creds;
 }
 
