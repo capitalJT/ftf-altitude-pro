@@ -267,12 +267,6 @@ genesis_register_sidebar( array(
 ) );
 
 
-//* add favicon
-// add_filter( 'genesis_pre_load_favicon', 'sp_favicon_filter' );
-// function sp_favicon_filter( $favicon_url ) {
-// 	return 'http://digitalmeaning.co/assets/favicon.ico';
-// }
-
 // Change favicon location and add touch icons
 add_filter( 'genesis_pre_load_favicon', 'gregr_favicon_filter' );
 function gregr_favicon_filter( $favicon ) {

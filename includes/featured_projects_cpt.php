@@ -21,11 +21,11 @@
 
     <div class="project-excerpt"><?php the_excerpt(); ?></div>
 
-<!--	--><?php //if ($project_url) : ?>
-<!--        <a class="project-url btn border" href="--><?php //echo $project_url;?><!--">-->
-<!--            --><?php //echo $project_button_text;?>
-<!--        </a>-->
-<!--	--><?php //endif; ?>
+	<?php if ($project_url) : ?>
+        <a class="project-url btn border" href="<?php echo $project_url;?>">
+            <?php echo $project_button_text;?>
+        </a>
+	<?php endif; ?>
 
   <?php echo edit_post_link('(Edit)', '<span>', '</span>'); ?>
 </article>
